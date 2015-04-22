@@ -10,11 +10,16 @@ namespace LearnDotNet
     {
         static void Main(string[] args)
         {
+            GreetingPeople("Zhang", new EnglishGreeting());
+            GreetingPeople("Zhang", new ChineseGreeting());
+            Console.ReadKey();
+        }
+        private static void GreetingPeople(string name, iGreeting makeGreeting)
+        {
+            makeGreeting.GreetingPeople(name);
+
         }
 
     }
-    public interface iGreeting
-    {
-        void GreetingPeople(string name);
-    }
+    
 }
