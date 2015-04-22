@@ -11,5 +11,10 @@ namespace LearnDotNet
         static void Main(string[] args)
         {
         }
+
+    }
+    public interface iGreeting
+    {
+        void GreetingPeople(string name);
     }
 }
